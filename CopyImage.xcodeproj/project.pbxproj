@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A08F870E16E1378C00379925 /* copy.png in Resources */ = {isa = PBXBuildFile; fileRef = A08F870C16E1378C00379925 /* copy.png */; };
+		A08F870F16E1378C00379925 /* paste.png in Resources */ = {isa = PBXBuildFile; fileRef = A08F870D16E1378C00379925 /* paste.png */; };
 		A0AD05A016E12F13001ADFE1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0AD059F16E12F13001ADFE1 /* Cocoa.framework */; };
 		A0AD05AA16E12F13001ADFE1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A0AD05A816E12F13001ADFE1 /* InfoPlist.strings */; };
 		A0AD05AC16E12F13001ADFE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AD05AB16E12F13001ADFE1 /* main.m */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A08F870C16E1378C00379925 /* copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = copy.png; path = CopyImage/copy.png; sourceTree = "<group>"; };
+		A08F870D16E1378C00379925 /* paste.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = paste.png; path = CopyImage/paste.png; sourceTree = "<group>"; };
 		A0AD059C16E12F13001ADFE1 /* CopyImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CopyImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0AD059F16E12F13001ADFE1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		A0AD05A216E12F13001ADFE1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -109,6 +113,8 @@
 		A0AD05BF16E13420001ADFE1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A08F870C16E1378C00379925 /* copy.png */,
+				A08F870D16E1378C00379925 /* paste.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -168,6 +174,8 @@
 				A0AD05B016E12F13001ADFE1 /* Credits.rtf in Resources */,
 				A0AD05B616E12F13001ADFE1 /* Document.xib in Resources */,
 				A0AD05B916E12F13001ADFE1 /* MainMenu.xib in Resources */,
+				A08F870E16E1378C00379925 /* copy.png in Resources */,
+				A08F870F16E1378C00379925 /* paste.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +329,7 @@
 				A0AD05BE16E12F13001ADFE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

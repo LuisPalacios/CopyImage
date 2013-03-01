@@ -59,13 +59,13 @@
 							<object class="NSMutableString" key="NSToolbarItemIdentifier">
 								<characters key="NS.bytes">057D2796-6E43-42FC-B5B5-7D760D68D7CD</characters>
 							</object>
-							<string key="NSToolbarItemLabel">Toolbar Item</string>
-							<string key="NSToolbarItemPaletteLabel">Toolbar Item</string>
+							<string key="NSToolbarItemLabel">Copy</string>
+							<string key="NSToolbarItemPaletteLabel">Copy</string>
 							<string key="NSToolbarItemToolTip"/>
 							<nil key="NSToolbarItemView"/>
 							<object class="NSCustomResource" key="NSToolbarItemImage">
 								<string key="NSClassName">NSImage</string>
-								<string key="NSResourceName">NSActionTemplate</string>
+								<string key="NSResourceName">copy</string>
 							</object>
 							<nil key="NSToolbarItemTarget"/>
 							<nil key="NSToolbarItemAction"/>
@@ -73,7 +73,7 @@
 							<string key="NSToolbarItemMaxSize">{0, 0}</string>
 							<bool key="NSToolbarItemEnabled">YES</bool>
 							<bool key="NSToolbarItemAutovalidates">YES</bool>
-							<int key="NSToolbarItemTag">-1</int>
+							<int key="NSToolbarItemTag">0</int>
 							<bool key="NSToolbarIsUserRemovable">YES</bool>
 							<int key="NSToolbarItemVisibilityPriority">0</int>
 						</object>
@@ -81,27 +81,33 @@
 							<object class="NSMutableString" key="NSToolbarItemIdentifier">
 								<characters key="NS.bytes">93030FCF-686D-48CE-A8A9-205D362160FB</characters>
 							</object>
-							<string key="NSToolbarItemLabel">Toolbar Item</string>
-							<string key="NSToolbarItemPaletteLabel">Toolbar Item</string>
+							<string key="NSToolbarItemLabel">Paste</string>
+							<string key="NSToolbarItemPaletteLabel">Paste</string>
 							<string key="NSToolbarItemToolTip"/>
 							<nil key="NSToolbarItemView"/>
-							<nil key="NSToolbarItemImage"/>
+							<object class="NSCustomResource" key="NSToolbarItemImage">
+								<string key="NSClassName">NSImage</string>
+								<string key="NSResourceName">paste</string>
+							</object>
 							<nil key="NSToolbarItemTarget"/>
 							<nil key="NSToolbarItemAction"/>
 							<string key="NSToolbarItemMinSize">{0, 0}</string>
 							<string key="NSToolbarItemMaxSize">{0, 0}</string>
 							<bool key="NSToolbarItemEnabled">YES</bool>
 							<bool key="NSToolbarItemAutovalidates">YES</bool>
-							<int key="NSToolbarItemTag">-1</int>
+							<int key="NSToolbarItemTag">1</int>
 							<bool key="NSToolbarIsUserRemovable">YES</bool>
 							<int key="NSToolbarItemVisibilityPriority">0</int>
 						</object>
 					</dictionary>
-					<array class="NSMutableArray" key="NSToolbarIBAllowedItems">
+					<array key="NSToolbarIBAllowedItems">
 						<reference ref="747910760"/>
 						<reference ref="66057906"/>
 					</array>
-					<array class="NSMutableArray" key="NSToolbarIBDefaultItems"/>
+					<array key="NSToolbarIBDefaultItems">
+						<reference ref="747910760"/>
+						<reference ref="66057906"/>
+					</array>
 					<array key="NSToolbarIBSelectableItems" id="0"/>
 				</object>
 				<nil key="NSUserInterfaceItemIdentifier"/>
@@ -167,8 +173,8 @@
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSImageCell" key="NSCell" id="425260707">
-								<int key="NSCellFlags">134217728</int>
-								<int key="NSCellFlags2">33554432</int>
+								<int key="NSCellFlags">404750336</int>
+								<int key="NSCellFlags2">0</int>
 								<string key="NSCellIdentifier">_NS:9</string>
 								<int key="NSAlign">0</int>
 								<int key="NSScale">0</int>
@@ -185,7 +191,7 @@
 					<reference key="NSNextKeyView" ref="913440740"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {2560, 1418}}</string>
-				<string key="NSMinSize">{94, 127}</string>
+				<string key="NSMinSize">{94, 164}</string>
 				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
 				<bool key="NSWindowIsRestorable">YES</bool>
 			</object>
@@ -210,6 +216,22 @@
 						<reference key="destination" ref="913440740"/>
 					</object>
 					<int key="connectionID">100037</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">copy:</string>
+						<reference key="source" ref="512844837"/>
+						<reference key="destination" ref="747910760"/>
+					</object>
+					<int key="connectionID">100058</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">paste:</string>
+						<reference key="source" ref="512844837"/>
+						<reference key="destination" ref="66057906"/>
+					</object>
+					<int key="connectionID">100059</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
@@ -473,7 +495,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">100057</int>
+			<int key="maxID">100059</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -600,10 +622,10 @@
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaFramework</string>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
-		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="NS.key.0">NSActionTemplate</string>
-			<string key="NS.object.0">{15, 15}</string>
-		</object>
+		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
+			<string key="copy">{128, 128}</string>
+			<string key="paste">{128, 128}</string>
+		</dictionary>
 		<bool key="IBDocument.UseAutolayout">YES</bool>
 	</data>
 </archive>
